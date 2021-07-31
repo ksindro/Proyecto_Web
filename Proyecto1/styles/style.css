@@ -11,7 +11,7 @@ body {
     font-weight: bold;
     list-style: none;
     text-decoration: none;
-
+    height: 100%;
     }
     a{
         color: rgb(176, 204, 53);
