@@ -3,6 +3,14 @@ body {
     image-resolution: 100px;
     }
 
+    table{
+        align-content: center;
+        border: rgb(31, 29, 29);
+        width: 80%;
+        height: 300px;
+        border-collapse: collapse;
+    }
+ 
   ul.navar  {
     background: rgb(7, 92, 202);
     margin: 0.5em 0;
@@ -13,9 +21,12 @@ body {
     text-decoration: none;
     height: 100%;
     }
+
     a{
         color: rgb(176, 204, 53);
         text-align:center;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     h1{
@@ -28,12 +39,7 @@ footer{
     color: rgb(22, 56, 209);
     text-align: center;
 }
-td{
-    color: rgb(221, 225, 247);
-    font-family: Georgia, "Times New Roman",
-    Times, serif;
-}
-th{
+td,th{
     color: rgb(221, 225, 247);
     font-family: Georgia, "Times New Roman",
     Times, serif;
