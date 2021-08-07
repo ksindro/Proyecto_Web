@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+       
+
+</head>
+
+
+<body>
+    <!--Sección de registro de usuario-->
+    <div class="registrodatos"> 
+         <!--main de registro-->
+            <main class="grid_main"> 
+                <br> <br>
+                    <h3>Registro de nuevos clientes</h3>
+                    <!--Formulario para registro de datos-->
+                    <form action="" method="">
+                           <br> <legend>DATOS PERSONALES</legend>    
+                            <br><div>
+                                <!--Sección para escoger e ingresar documento de identificación-->
+                                <label for="idIdentificacion">Documento de identificacion *</label>
+                                <select name="doctoidentificacion" id="doctoidentificacion">
+                                    <option value="dpi">DPI</option>
+                                    <option value="pasaporte">Pasaporte</option>
+                                </select>
+                                <input type="number" 
+                                        name="txtIdentificacion" 
+                                        id="idIdentificacion"
+                                        required
+                                        placeholder="ingrese solo numeros">
+                            </div>						   
+                            <br> <div>
+                                <!--Sección para nombres-->
+                                <label for="idNombre">Nombres</label>
+                                <input type="text" id="idNombre1"
+                                        name="txtNombre"
+                                        required
+                                        placeholder="Ingrese primer nombre">                             
+                            </div>
+                        
+                            <!--Sección para ingresar dirección-->
+                            <br><div>
+                                <label for="idDireccion">Direccion</label>
+                                <input type="text"
+                                        name="txtDireccion"
+                                        required
+                                        id="idDireccion"
+                                        placeholder="Direccion domiciliar">
+                            </div>      
+							<br><div>
+                                <label for="idPais">Pais</label>
+                                <input type="text"
+                                        name="idPais"
+                                        required
+                                        id="idPais"
+                                        placeholder="Pais">
+                            </div>  							
+                            <!--Sección para correo electronico-->
+                            <br><div>
+                                <label for="idEmail">Email</label>
+                                <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
+                            
+                            </div> <br>
+						<br><div>
+                                <label for="idObservaciones">Observaciones</label>
+                                <input type="text"
+                                        name="idObservaciones"
+                                        required
+                                        id="idObservaciones"
+                                        placeholder="Observaciones">
+                            </div> 
+							                
+                    </form>
+					
+					
+					<form action="" method="">
+                           <br> <legend>DATOS LABORALES</legend>    
+				   
+                            <br> <div>
+                                <!--Sección para nombres-->
+                                <label for="idEmpresa">Empresa</label>
+                                <input type="text" id="idEmpresa"
+                                        name="idEmpresa"
+                                        required
+                                        placeholder="Ingrese nombre de Empresa">                             
+                            </div>
+                        
+                            <!--Sección para ingresar dirección-->
+                            <br><div>
+                                <label for="idsueldo">Sueldo Ordinario</label>
+                                <input type="int"
+                                        name="idsueldo"
+                                        required
+                                        id="idsueldo"
+                                        placeholder="Ingrese sueldo">
+                            </div> 
+
+                            <br><div>
+                                <label for="idbonificacion">Bonificacion</label>
+                                <input type="int"
+                                        name="idbonificacion"
+                                        required
+                                        id="idbonificacion"
+                                        placeholder="Ingrese bonificacion">
+                            </div>
+
+                            <br><div>
+                                <label for="idOtraBonificacion">Otras Bonificacion</label>
+                                <input type="int"
+                                        name="idOtraBonificacion"
+                                        required
+                                        id="idOtraBonificacion"
+                                        placeholder="Ingrese otras bonificaciones">
+                            </div>							
+							
+							                
+                    </form>
+
+        </main>       
+        <footer>
+
+        </footer>
+
+    </div>
+
+
+
+</form>
+</body>
+</html>
