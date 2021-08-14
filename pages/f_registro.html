@@ -5,130 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="../styles/style.css">
     <title>Registro</title>
-       
+  
+    <img class="logo" src="../images/logo2.jpg" width="100" height="100">
+    <h1> <center> Desarrollo Web</center>  </h1>
+    <h1> <center> Introduccion a HTML5</center> </h1>
 
 </head>
 
 
 <body>
+<!-- Barra de paginas-->
+<ul class="navar">
+    <a href="../index.html">Inicio</a>
+    <a href="elementos.html">Elementos</a>
+    <a href="atributos.html">Atributos</a>
+</ul>
+
     <!--Sección de registro de usuario-->
-    <div class="registrodatos"> 
-         <!--main de registro-->
-            <main class="grid_main"> 
-                <br> <br>
-                    <h3>Registro de nuevos clientes</h3>
-                    <!--Formulario para registro de datos-->
-                    <form action="" method="">
-                           <br> <legend>DATOS PERSONALES</legend>    
-                            <br><div>
-                                <!--Sección para escoger e ingresar documento de identificación-->
-                                <label for="idIdentificacion">Documento de identificacion *</label>
-                                <select name="doctoidentificacion" id="doctoidentificacion">
-                                    <option value="dpi">DPI</option>
-                                    <option value="pasaporte">Pasaporte</option>
-                                </select>
-                                <input type="number" 
-                                        name="txtIdentificacion" 
-                                        id="idIdentificacion"
-                                        required
-                                        placeholder="ingrese solo numeros">
-                            </div>						   
-                            <br> <div>
-                                <!--Sección para nombres-->
-                                <label for="idNombre">Nombres</label>
-                                <input type="text" id="idNombre1"
-                                        name="txtNombre"
-                                        required
-                                        placeholder="Ingrese primer nombre">                             
-                            </div>
-                        
-                            <!--Sección para ingresar dirección-->
-                            <br><div>
-                                <label for="idDireccion">Direccion</label>
-                                <input type="text"
-                                        name="txtDireccion"
-                                        required
-                                        id="idDireccion"
-                                        placeholder="Direccion domiciliar">
-                            </div>      
-							<br><div>
-                                <label for="idPais">Pais</label>
-                                <input type="text"
-                                        name="idPais"
-                                        required
-                                        id="idPais"
-                                        placeholder="Pais">
-                            </div>  							
-                            <!--Sección para correo electronico-->
-                            <br><div>
-                                <label for="idEmail">Email</label>
-                                <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
-                            
-                            </div> <br>
-						<br><div>
-                                <label for="idObservaciones">Observaciones</label>
-                                <input type="text"
-                                        name="idObservaciones"
-                                        required
-                                        id="idObservaciones"
-                                        placeholder="Observaciones">
-                            </div> 
-							                
-                    </form>
-					
-					
-					<form action="" method="">
-                           <br> <legend>DATOS LABORALES</legend>    
-				   
-                            <br> <div>
-                                <!--Sección para nombres-->
-                                <label for="idEmpresa">Empresa</label>
-                                <input type="text" id="idEmpresa"
-                                        name="idEmpresa"
-                                        required
-                                        placeholder="Ingrese nombre de Empresa">                             
-                            </div>
-                        
-                            <!--Sección para ingresar dirección-->
-                            <br><div>
-                                <label for="idsueldo">Sueldo Ordinario</label>
-                                <input type="int"
-                                        name="idsueldo"
-                                        required
-                                        id="idsueldo"
-                                        placeholder="Ingrese sueldo">
-                            </div> 
+    <main class="mainform">
+        <form action="" class="formulario">
+            <h4>Datos Personales</h4>
+            <div class="contenedorForm">
+                <div class="input">
+                    Ingrese DPI<input type="number"  id="dpi" >
+                </div>
+                    <!-- Div para capturar el nombre-->
+                <div class="input">
+                    Ingrese nombres<input type="text"  name="txtNombre" id="IdNombre" >
+                </div>
+                    <!-- Div para capturar direccion-->
+                <div class="input">
+                   Ingrese direcion <input type="text"  name="txtdireccion" id="Iddireccion">
+                </div>
+                 <!-- Div para capturar el mail-->
+                <div class="input">
+                  E-mail <input type="email"  name="txtEmail" id="IdEmail" >
+                </div  class="input">
+                <div>
+                    Ingrese pais<input type="text" name="pais" id="pais">
+                </div>
+                 <div class="input">
+                    Ingresar observaciones <input type="text" type="text" name="observaciones" id="observaciones">
+                 </div>
 
-                            <br><div>
-                                <label for="idbonificacion">Bonificacion</label>
-                                <input type="int"
-                                        name="idbonificacion"
-                                        required
-                                        id="idbonificacion"
-                                        placeholder="Ingrese bonificacion">
-                            </div>
+                 <h4>Datos de Empresa</h4>
+                 <div class="input">
+                    Empresa<input type="text" type="text" name="empresa" id="empresa">
+                </div>
 
-                            <br><div>
-                                <label for="idOtraBonificacion">Otras Bonificacion</label>
-                                <input type="int"
-                                        name="idOtraBonificacion"
-                                        required
-                                        id="idOtraBonificacion"
-                                        placeholder="Ingrese otras bonificaciones">
-                            </div>							
-							
-							                
-                    </form>
+                <div class="input">
+                    Sueldo<input type="number" name="sueldo" id="sueldo" >
+                </div>
+                <div class="input">
+                    Bonificacion<input type="number" name="bonificacion" id="bonificacion" >
+                </div>
+                <div class="input">
+                    Otra bonificacion<input type="number" name="OtraBonificacion" id="OtraBonificacion" >
+                </div>
+                
+                <!-- Div para agregar terminos y condiciones-->
+               <div class="input">
+                  <button type="submit" class="button ">Registrar</button>
+                </div>
+                
+            </div>
+        </form>
+    </main>    
+     
 
-        </main>       
-        <footer>
-
-        </footer>
-
-    </div>
-
-
-
-</form>
 </body>
 </html>
+
