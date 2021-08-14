@@ -33,6 +33,65 @@ body {
         color: rgb(221, 225, 247);
     }
 
+
+.mainform{
+    display: grid;
+    background: url(../images/pasaporte2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    grid-column: 1 /span 2;
+    grid-row: 2;
+    padding: 30px;
+    justify-content: center;
+}
+
+.contenedorForm{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .formulario{
+    background: rgba(70, 226, 91, 0.575);
+    margin: 10%;
+    padding: 10px;
+    color: white;
+  }
+  
+  .input{
+    display: grid;
+    font: size 10;
+    width: 95%;
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    line-height: 15px;
+    justify-content: center;
+  }
+  
+  .input input{
+    padding: 1px;
+  }
+  
+  .button{
+    margin-bottom: 15px;
+    background-color:  rgb(40, 196, 92);
+    border: 1px solid rgb(85, 209, 68);
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    line-height: 15px;
+  }
+  
+  .button:hover {
+    background-color: rgb(166, 238, 144);
+    color: white;
+    align-content: center;
+  }
+
+
 footer{
     font-family: Georgia, "Times New Roman",
     Times, serif;
